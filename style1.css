@@ -1,0 +1,83 @@
+h1{
+    text-align: center;
+    font-size: 2em;
+    color: cadetblue;
+    padding-top: 20px;
+    
+  }
+  h2{
+    text-align: center;
+    
+  }
+
+  .back{
+      margin-left:10px;
+  }
+#home{
+    float: left;
+    margin-left: 15px;
+}
+
+*{
+    box-sizing: border-box;
+}
+label{
+    top: 1.5;
+    text-align:left;
+    font-size: 1.2em;
+    
+}
+
+/* form
+{
+    background-color: antiquewhite;
+} */
+
+.masterElements{
+    margin-top:10px;
+    margin-bottom:10px
+}
+
+input, textarea{
+    text-align: left;
+}
+header{
+    text-align:center;
+    font-size:xx-large
+}
+
+.btn-div{
+    margin-bottom:40px;
+}
+
+#eventDetails{
+    width:100%;
+    height:100%;
+    
+}
+
+#eventName ,#eventDescription ,#eventOutcomes{
+    width:100%;
+}
+
+textarea{
+    border:2px solid rgb(83, 145, 114);
+    
+}
+
+
+#submitNewEvent{
+    width:100px;
+    height:40px;
+    font-size:1.2em;
+}
+
+.page-header{
+    margin-top:-10px;
+}
+
+.hide-outcome-id{
+    visibility:hidden;
+}
+
+

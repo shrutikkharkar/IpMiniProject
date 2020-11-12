@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Master</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="page-header">
+        <h1>VCET-IT Events</h1>
+    </div>
+
+    <div class="container event-master-container">
+
+
+        <div class="row">
+            <nav class="nav justify-content-center" id="home">
+                <button type="button" class="btn btn-info" >
+                  <a class="nav-link active" href="index.html" style="color: white;">Home</a>
+                </button>
+                <button type="button" class="btn btn-info back" >
+                    <a class="nav-link active" href="eventControl.php" style="color: white;">Back</a>
+                  </button>
+                
+            </nav>
+            <header style="margin-left: 20%;">Add a new Event</header>
+            <div class="col-md-12 col-xs-12">
+    
+            <!-- action="master.php"  -->
+                <form class="form-box" action="master.php" method="post">
+                    
+
+                    <br>
+                    <div class="row">
+                        <div class="col-md-6 col-xs-12">
+
+                            <div class="masterElements form-group">
+            
+                                <label for="eventName">Event name:</label>
+                                <textarea class="form-control" name="eventName" id="eventName" cols="50" rows="2" required></textarea>
+                                <!-- <input type="text" name="eventName" id="eventName"> -->
+                    
+                            </div>
+                    
+                            <div class="masterElements form-group">
+                    
+                                <label for="eventDescription">Description in short:</label>
+                                <!-- <input type="text" name="eventDescription" id="eventDescription"> -->
+                                <textarea class="form-control" name="eventDescription" id="eventDescription" cols="50" rows="3"></textarea>
+                            
+                            </div class="masterElements form-group">
+        
+                                <label for="eventDate">Event date:</label>
+                                <input class="form-control" type="date" name="eventDate" id="eventDate">
+        
+                            <div class="form-group" style="margin-top: 20px;">
+                                <label for="">Event Time:</label>
+                                <!-- <input type="Time" name="eventTime" id="eventTime"> -->
+                                <b>&nbspFrom</b> 
+                                <input style="width: 20%;" type="Time" name="eventTimeStart" id="eventTimeStart"><b>&nbspto</b> 
+                                <input style="width: 20%;" type="Time" name="eventTimeEnd" id="eventTimeEnd">
+   
+                            </div>   
+                            
+                            <div class="form-group">
+                                <label for="eventLocation">Event Location:</label>
+                                <input class="form-control" style="width: 100%;" type="text" name="eventLocation" id="eventLocation">
+                            </div>
+
+                                                    
+                        </div>
+
+                        <div class="col-md-6 col-xs-12">
+
+                            <div class="masterElements form-group">
+            
+                                <label for="eventDetails">Complete event details:</label>
+                                <textarea class="form-control" name="eventDetails" id="eventDetails" cols="50" rows="10"></textarea>
+                                <!-- <input type="text" name="eventDetails" id="eventDetails"> -->
+                    
+                            </div>
+
+                            <div style="margin-top:50px;" class="form-group">
+
+                                <label for="eventSpeaker">Event Speaker/Judge:</label>
+                                <input class="form-control" type="text" name="eventSpeaker" id="eventSpeaker">
+
+                            </div>
+
+
+                            
+                        </div>
+                    </div>
+                    <hr style="border: 1px solid black;">
+            
+                    <div class="my-2">
+                        
+                            
+                        
+                        <table id="table_EventOutcomes" class="table table-hover my-2">
+                            <thead>
+                                <tr>
+                                    <td><b>Event Outcomes:</b></td>
+                                    
+                                    <td><button style="margin-left: 55%;" type="button" onclick="addRow()" class="btn btn-primary mb-2">Add Row</button>&nbspFor Outcome</td>
+                                </tr>
+                            </thead>
+                            <tbody id="tbody_EventOutcomes">
+                                <tr>
+                                    <td><input style="width: 150%;" type="text" name="EventOutcomes[]" class="form-control" /></td>
+                                    <td><button style="margin-left: 55%;" onclick="deleteRow(this)" class="btn btn-danger">Delete</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="mt-2">
+                        <button id="submitNewEvent" name="submit" type="submit" class="btn btn-success">Submit</button>
+                        <br><br><br><br>
+                    </div>
+
+                    
+
+                </form>       
+            </div>
+        </div>
+    </div>
+
+    
+
+    
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+    <script>
+
+        function addRow(){
+            var html = '<tr>'+
+                            '<td><input style="width: 150%;" type="text" name="EventOutcomes[]" class="form-control" /></td>'+
+                            '<td><button style="margin-left: 55%;" onclick="deleteRow(this)" class="btn btn-danger">Delete</button></td>'+
+                        '</tr>';
+            
+            $("#tbody_EventOutcomes").append(html);
+        }
+
+        function deleteRow(btn){
+            var row = btn.parentNode.parentNode;
+            $(row).remove();
+        }
+
+    </script>
+
+
+</body>
+</html>

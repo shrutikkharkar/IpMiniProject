@@ -1,0 +1,25 @@
+.back-btn-fb{
+	margin-top:15px;
+	margin-bottom:10px;
+}
+
+@media(max-width:576px) {
+
+	.overall-sat{
+		font-size: 1.2em;
+    	text-align: start;
+    	margin-left: 5%;
+    	margin-right: 5%;
+	}
+
+	.fb-for-head{
+		font-size:1.4em;
+		text-align:center;
+
+	}
+
+	.feedback-sub-btn{
+		margin-left: 40%;
+    	margin-bottom: 70%;
+	}
+}

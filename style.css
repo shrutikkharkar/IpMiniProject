@@ -1,0 +1,411 @@
+h1{
+  text-align: center;
+  font-size: 2em;
+  color: cadetblue;
+  padding-top: 20px;
+  
+}
+h2{
+  text-align: center;
+  
+  
+}
+
+
+
+#home{
+  font-size: 1.5em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding-top: 20px;
+  margin-left: 110px;
+  
+}
+
+.adminLoginButton{
+  margin-left: 10px;
+}
+
+
+.home{
+  margin-left: 107px;
+}
+
+.back{
+  margin-left: 15px;
+}
+
+
+
+#main-content{
+  padding-left: 20px;
+  padding-right:20px;
+  padding-top: 50px; 
+
+}
+
+.blocks{
+  width: 100%;
+  height: 300px;
+  /* background-color: rgb(149, 213, 233); */
+  position: relative;
+  border: 5px solid white;
+  background: black;
+  
+}
+
+
+img{
+  height: 100%;
+  width: 100%;
+}
+
+
+
+.home-page-menu-tiles{
+  box-sizing: border-box;
+  float: left;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  
+  margin: 15px 15px 15px 15px;
+}
+
+
+.new-homepage{
+  width: 100%;
+}
+
+
+
+/* Registration form start */
+input,select{
+  width: 500px;
+  height: 35px;
+  border: none;
+  
+  /* width: 500px; */
+    
+}
+
+.hide-name-in-input{
+  background-color:rgb(209, 228, 230);
+  font-size:1.5em;
+  margin-bottom: 20px;
+  font-weight: bold;
+
+}
+
+.certificate-upload-btn{
+  width: 100%;
+}
+
+
+.form-box{
+  background-color: rgb(209, 228, 230);
+  text-align: center;
+  margin-top: 30px;
+  border: 3px solid black;
+  border-radius: 20px;
+  
+}
+
+
+
+
+label{
+  width: 250px;
+  text-align: right;
+  font-size: 1.7em;
+  display: inline-block;
+  
+}
+
+.register-button{
+  border :3px solid rgb(0, 0, 0);
+  font-size:1.5em;
+  width: 150px;
+  height: 50px;
+  margin-top: 20px;
+  display: inline-block;
+  size: 2em;
+  margin-bottom: 20px;
+  background-color: grey;
+  color: rgb(199, 255, 199);
+}
+
+.register-button:hover {
+  background-color:black;
+  color:white;
+  border :3px solid rgb(255, 255, 255);
+}
+/* Registration form end */
+
+
+
+.upcoming-events{
+  margin-bottom: 20px;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+  
+  
+}
+
+.todays-events{
+  margin-bottom: 20px;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.event-analysis-container,.event-details-container{
+  margin-bottom: 20px;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+.feedback-for-event,.register-for-event{
+
+    top: 0;
+    right: 0;
+    position: absolute;
+    
+    line-height: 12px;
+    margin-top: 10px;
+    margin-right: 9px;
+}
+
+.register-btn-inDetails{
+  margin-left: 88%;
+  margin-right: 10px;
+  margin-top: 10px;
+  width: 10%;
+  
+  
+}
+
+.event-analysis-heading,.event-details-heading{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.event-analysis-body,.event-details-body{
+  text-align: center;
+}
+
+
+
+.event-details-button{
+  color: #5F78A0;
+  font-weight: bold;
+}
+
+
+  .piechart{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: conic-gradient(
+      rgb(86, 192, 86) 80%,
+      red 0 20%
+    );
+  
+    margin-right: 40px;
+    top: 0;
+    right: 10px;
+    
+    
+  
+  
+  }
+  
+  
+  .studsathead{
+    /* right: 0; */
+    margin-left: 30px;
+    font-size: 35px;
+    color: #7195be;
+  }
+  .studentCount{
+    font-size: 1.3em;
+  }
+  .studFedPerYes{
+    font-size: 2em;
+    color: rgb(73, 201, 90);
+  }
+
+  .studFedPerNo{
+    font-size: 2em;
+    color: red;
+  }
+
+
+  *{
+    box-sizing: border-box;
+  }
+
+
+  #createNewEvent{
+    margin-top:20px;
+    text-align: center;
+    color:rgb(93, 106, 216);
+  }
+
+  .createButton{
+    margin-left: 40px;
+  }
+
+  .printButtonStdList,.backButtonStdList{
+    width:125px;
+  }
+
+  .studSatDiv{
+    display: flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+  }
+
+  
+ 
+  @media (min-width: 1200px){
+    #home{
+      padding-right: 63%;
+    }
+  }
+  
+  @media (min-width: 992px) and (max-width: 1199px){
+    #home{
+      padding-right: 63%;
+      width: 100%;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px){
+    
+    .blocks{
+      width: 100%;
+    }
+  
+    #main-content{
+      width: 100%;
+    }
+  
+   
+  
+  }
+  /* For mobile devices */
+  @media (max-width: 576px){
+  
+    /* For index page */
+    #home{
+      margin-left: 0;
+    }
+  
+    
+  
+  
+  
+  
+  
+  
+  
+    .home{
+      
+      justify-content: first baseline;
+    }
+    
+    .back{
+      margin-left: 15px;
+    }
+  
+    label{
+      width: 100%;
+    }
+  
+  /* Registration form */
+    input,select{
+     
+      width: 100%;
+      height: 35px;
+      border: 1px solid lightgrey;
+
+       /* width: 250px; */
+      
+    }
+
+    
+    .display-eventName-in-registration{
+      background-color: white;
+      border-radius: 10px;
+      font-size: large;
+      text-align: initial;
+      padding: 10px;
+    }
+
+    
+    .form-box{
+      background-color: rgb(209, 228, 230);
+      text-align: center;
+      margin-top: 30px;
+      border: 0px solid black;
+      border-radius: 0px;
+    }
+  
+    label{
+      /* width: 250px; */
+      text-align: left;
+      font-size: 1.2em;
+      display: inline-block;
+      margin-bottom:0rem;
+    }
+  
+    .register-btn-inDetails{
+      display: flex;
+      flex-direction: column;
+      margin-left: 60%;
+      margin-right: 10px;
+      margin-top: 10px;
+      width: 25%;
+      position: relative;
+      margin-left: auto;
+      
+    }
+
+    .card-title{
+      font-size:23px;
+    }
+  
+    .studsathead{
+      font-size: 1.5em;
+      margin-left: -20%;
+    }
+
+
+    .register-box-persec{
+      background-color: white;
+      padding: 8px;
+      border-radius: 10px;
+      margin-bottom: 12px;
+    }
+
+    .details-title-phone{
+      text-align: left;
+      font-size: 1.4em;
+    }
+
+    .event-outcomes-phone{
+      text-align: left;
+    }
+    
+    .details-elements-phone{
+      font-size:0.8em;
+    }
+  
+  }
+
+  @media print{
+    .noPrint{
+      visibility: hidden;
+    }
+  }
